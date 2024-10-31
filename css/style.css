@@ -1,0 +1,301 @@
+/* Mobile (Portait) */
+@media screen and (min-width: 320px) {
+    .desktopnav {
+        display: none;
+    }
+    .logo {
+        width: 20vw;
+        height: 15vh;
+    }
+    .menu {
+        width: 20vw;
+        height: 8vh;
+    }
+    .mobilenav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .mobilenav #mobilenavLinks {
+        display: none;
+    }
+    
+    .mobilenav a {
+        color: black;
+        padding: 14px 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 24px;
+        display: block;
+    }
+    .mobilenav a:hover {
+        background-color: orange;
+        color: black;
+    }
+    #intro-container, #about-container, #programs-container, #donate-container {
+        position: relative;
+        width: 100%;
+    }
+    .intro-background, .about-background, .programs-background, .donate-background{
+        width: 100%;
+        height: 50%;
+    }
+    .intro-text, .about-text, .programs-text, .donate-text {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+        color: orange;
+        z-index: 1;
+        background-color: rgba(100, 96, 96, 0.637);
+    }
+    .intro-text{
+        top: 20%;
+        left: 50%;
+        text-align: center;
+    }
+    .about-text {
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        margin: 0;
+    }
+    .programs-text {
+        top: 50%;
+        left: 50%;
+        text-align: center;
+    }
+    .donate-text {
+        top: 50%;
+        left: 50%;
+    }
+    p {
+        margin: 10px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    section:nth-child(odd) {
+        background-color: orange;
+    }
+    .call-to-action-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .program-video {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    h1 {
+        text-align: center;
+    }
+    #team-members {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #history-and-values {
+        color: #000033;
+    }
+    #promise-text {
+        color: #57585C;
+    }
+    h2 {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .funding-stats {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-size: 23px;
+        padding: 0;
+    }
+    .funding-stats li {
+        background-color: #F5F3F1;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin: 10px;
+    }
+    .funding-stats li img {
+        float: left;
+        margin-right: 10px;
+    }
+    .divider {
+        width: 50%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    #donationForm, #creditCardFields, #payment-buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .donation-option, .payment-option, #donate-button, #contact-button {
+        width: 80vw;
+        margin-bottom: 2em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .donation-option:nth-child(1) {
+        margin-top: 1em;
+        background-color: orange;
+    }
+    #billing-form, #creditCardFields {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #billing-form label, #payment-form label, #contact-form label {
+        margin-left: 0.7em;
+        font-size: 21px;
+    }
+    #billing-form input, select, #payment-form input, select, #contact-form input, textarea {
+        margin-bottom: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    #donate-button, #contact-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contact-page {
+        background-color: rgb(254,106,13);
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+    #contact-info {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-size: 2em;
+        align-items: center;
+    }
+    #contact-info li {
+        margin-bottom: 1em;
+    }
+    #contact-info a {
+        color: rgb(254,106,13);
+        text-decoration: none;
+    }
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+    #redirect-page {
+        background-color: rgb(254,106,13);
+        color: white;
+        font-size: 35px;
+        text-align: center;
+    }
+}
+/* Mobile (Landscape) */
+@media screen and (min-width: 481px) {
+    .call-to-action-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #program-video {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+/* Tablet (Portrait) */
+@media screen and (min-width: 601px) {
+    #program-video {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    #testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Tablet (Landscape) */
+@media screen and (min-width: 769px) {
+    .row {
+        display: flex;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .mobilenav {
+        display: none;
+    }
+    .desktopnav {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+    }
+    .logo {
+        max-height: 250px; 
+    }
+    
+    #desktopnavLinks {
+        display: flex;
+        gap: 30px; 
+    }
+    
+    #desktopnavLinks a {
+        text-decoration: none; 
+        color: #000; 
+    }
+    .call-to-action-image {
+        display: block;
+        margin-right: 0;
+    }
+    #desktopnavLinks {
+        font-size: 1.5em;
+        gap: 2em;
+        margin-right: 30px;
+    }
+    #desktopnavLinks a {
+        background-color: rgb(254,106,13);
+        border-radius: 15px;
+        padding: 10px;
+        color: white;
+    }
+}
+/* General Rulings */
+.hidden {
+    display: none;
+}
+body {
+    margin: 0;
+}
+.mission-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

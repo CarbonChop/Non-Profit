@@ -1,0 +1,166 @@
+<!DOCTYPE html="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Donate</title>
+</head>
+<body>
+    <header>
+        <nav class="mobilenav">
+            <img src="assets/no kid hungry logo.svg" alt="No Kid Hungry Logo" class="logo">
+            <nav id="mobilenavLinks">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="programs.html">Programs/Services</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+            <img src="assets/burger-menu.svg" alt="burger menu icon" onclick="navBar()" class="menu">
+    </nav>
+    <nav class="desktopnav">
+        <img src="assets/no kid hungry logo.svg" alt="No Kid Hungry Logo" class="logo">
+            <nav id="desktopnavLinks">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="programs.html">Programs/Services</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+    </nav>
+    </header>
+    <div id="donate-container">
+        <img class="donate-background" src="assets/donate320.jpg" alt="girl waiting for lunch"
+                 sizes="(min-width: 1025px) 70vw, 
+                        (min-width: 601px) 80vw, 
+                        100vw"
+                 srcset="assets/donate320.jpg 320w, 
+                        assets/donate400.jpg 400w,
+                        assets/donate800.jpg 800w,
+                        assets/donate1000.jpg 1000w,
+                        assets/donate.jpeg 1920w">
+        <div class="donate-text">
+            <h1>Donate</h1>
+        </div>
+    </div>
+    <div id="donation-form">
+        <form id="donationForm">
+            <button type="button" class="donation-option" onclick="selectAmountType('one-time', this)">One Time</button>
+            <button type="button" class="donation-option" onclick="selectAmountType('monthly', this)">Monthly</button>
+            <button type="button" class="donation-option" data-amount="25"onclick="selectAmount(this)">$25</button>
+            <button type="button" class="donation-option" data-amount="35" onclick="selectAmount(this)">$35</button>
+            <button type="button" class="donation-option" data-amount="45" onclick="selectAmount(this)">$45</button>
+            <button type="button" class="donation-option" data-amount="50" onclick="selectAmount(this)">$50</button>
+            <button type="button" class="donation-option" data-amount="75" onclick="selectAmount(this)">$75</button>
+            <button type="button" class="donation-option" data-amount="100" onclick="selectAmount(this)">$100</button>
+        </form>
+    </div>
+    <div id="billing-info">
+        <h1>Billing Information</h1>
+        <form id="billing-form">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name*" aria-required="true" required>
+            <label for="lname">Last name</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name*" aria-required="true" required>
+            <label for="billing-street-1">Billing Street 1</label>
+            <input type="text" name="billing-street-1" id="billing-street-1" placeholder="Billing Street 1*" aria-required="true" required>
+            <label for="billing-street-2">Billing Street 2</label>
+            <input type="text" name="billing-street-2" id="billing-street-2" placeholder="Billing Street 2" aria-required="false">
+            <label for="city">City*</label>
+            <input type="text" name="city" id="city" placeholder="City*" aria-required="true" required>
+            <label for="state">State*</label>
+            <input type="text" name="state" id="state" placeholder="State*" aria-required="true" required>
+            <label for="zip">Zip*</label>
+            <input type="text" name="zip" id="zip" placeholder="Zip*" aria-required="true" required>
+            <label for="country">Select a Country:</label>
+            <select id="country" name="country" aria-required="true" required autocomplete="on">
+                <option value="" disabled selected>Select your country</option>
+                <option value="USA">United States</option>
+                <option value="CAN">Canada</option>
+                <option value="GBR">United Kingdom</option>
+                <option value="AUS">Australia</option>
+                <option value="DEU">Germany</option>
+                <option value="FRA">France</option>
+                <option value="ITA">Italy</option>
+                <option value="ESP">Spain</option>
+                <option value="IND">India</option>
+                <option value="CHN">China</option>
+                <option value="JPN">Japan</option>
+                <option value="BRA">Brazil</option>
+                <option value="MEX">Mexico</option>
+                <option value="RUS">Russia</option>
+                <option value="ZAF">South Africa</option>
+                <option value="ARG">Argentina</option>
+                <option value="NLD">Netherlands</option>
+                <option value="SWE">Sweden</option>
+                <option value="NOR">Norway</option>
+                <option value="DNK">Denmark</option>
+                <option value="FIN">Finland</option>
+                <option value="CHE">Switzerland</option>
+                <option value="BEL">Belgium</option>
+                <option value="AUS">Australia</option>
+                <option value="AUT">Austria</option>
+                <option value="NZL">New Zealand</option>
+                <option value="SGP">Singapore</option>
+                <option value="HKG">Hong Kong</option>
+                <option value="ISR">Israel</option>
+                <option value="PHL">Philippines</option>
+                <option value="THA">Thailand</option>
+                <option value="VNM">Vietnam</option>
+                <option value="SAU">Saudi Arabia</option>
+                <option value="ARE">United Arab Emirates</option>
+            </select>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Email*" aria-required="true" required autocomplete="on">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" aria-required="true" required autocomplete="on">
+        </form>
+    </div>
+    <div id="payment-info">
+        <h1>Payment Information</h1>
+        <div id="payment-buttons-container">
+            <button type="button" class="payment-option" id="creditButton">Credit</button>
+            <button type="button" class="payment-option" id="paypalButton">Paypal</button>
+        </div>
+        <form id="payment-form">
+            <div id="creditCardFields">
+                <label for="cardNumber">Credit Card</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Credit Card Number*" aria-required="true" required>
+                <p id="ccValid"></p>
+                <select id="cardMonth" name="cardMonth" aria-required="true" required>
+                    <option value="">--Select a month--</option>
+                    <option value="01">01</option>
+                    <option value="01">02</option>
+                    <option value="01">03</option>
+                    <option value="01">04</option>
+                    <option value="01">05</option>
+                    <option value="01">06</option>
+                    <option value="01">07</option>
+                    <option value="01">08</option>
+                    <option value="01">09</option>
+                    <option value="01">10</option>
+                    <option value="01">11</option>
+                    <option value="01">12</option>
+                </select>
+                <select id="cardYear" name="cardYear" aria-required="true" required>
+                    <option value="">--Select a year--</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                </select>
+                <label for="cvv">CVV*</label>
+                <input type="text" id="cvv" name="cvv" maxlength="4" pattern="\d{3,4}" placeholder="Please enter a 3 or 4 digit CVV">
+                <button id="donate-button" type="submit">Donate</button>
+            </div>
+        </form>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>

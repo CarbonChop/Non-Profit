@@ -1,0 +1,65 @@
+<!DOCTYPE html="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav class="mobilenav">
+            <img src="assets/no kid hungry logo.svg" alt="No Kid Hungry Logo" class="logo">
+            <nav id="mobilenavLinks">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="programs.html">Programs/Services</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+            <img src="assets/burger-menu.svg" alt="burger menu icon" onclick="navBar()" class="menu">
+        </nav>
+        <nav class="desktopnav">
+            <img src="assets/no kid hungry logo.svg" alt="No Kid Hungry Logo" class="logo">
+                <nav id="desktopnavLinks">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="programs.html">Programs/Services</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+        </nav>
+    </header>
+    <main>
+        <div id="contact-page">
+            <h1 class="scale-up">Contact Us</h1>
+        </div>
+        <ul id="contact-info">
+            <li>No Kid Hungry 1030 15th Street, NW #1100W Washington, DC 20005</li>
+            <li><a href="mailto:info@strength.org">info@strength.org</a></li>
+            <li>(800) 222-1767</li>
+        </ul>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" aria-required="true" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" aria-required="true" required>
+        
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" aria-required="true" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" aria-required="true" required></textarea>
+        
+            <button id="contact-button" type="submit">Send Message</button>
+        </form>
+    </main>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); 
+            const formData = new FormData(event.target);
+            window.location.href = 'landing.html';
+        }
+    </script>
+    <script src="scripts/script.js"></script>
+</body>

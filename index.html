@@ -1,0 +1,76 @@
+<!DOCTYPE html="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>No Kid Hungry</title>
+</head>
+<body>
+    <header>
+        <nav class="mobilenav">
+                <img src="assets/no kid hungry logo.svg" alt="No Kid Hungry Logo" class="logo">
+                <nav id="mobilenavLinks">
+                    <a href="#">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="programs.html">Programs/Services</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+                <img src="assets/burger-menu.svg" alt="burger menu icon" onclick="navBar()" class="menu">
+        </nav>
+        <nav class="desktopnav">
+            <img src="assets/no kid hungry logo.svg" alt="No Kid Hungry Logo" class="logo">
+                <nav id="desktopnavLinks">
+                    <a href="#">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="programs.html">Programs/Services</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+        </nav>
+    </header>
+    <main>
+        <section id="intro-container">
+            <h1 class="hidden">Introduction</h1>
+            <img src="assets/little girl.jpg" alt="little girl" class="intro-background">
+            <div class="intro-text">
+                <h1 class="scale-up">NO KID HUNGRY</h1>
+            </div>
+            <p>Every day, kids across America come to school having not eaten a healthy meal - or having eaten nothing at all. The solution is breakfast served during the school day, preferably in the classroom before instruction begins.</p>
+            <p>School meals are at the heart of No Kid Hungry's work to end child hunger.</p>
+        </section>
+        <section id="mission-statement">
+            <img class="mission-img" src="assets/kid320.jpg"
+                 sizes="(min-width: 1025px) 70vw, 
+                        (min-width: 601px) 80vw, 
+                        100vw"
+                 srcset="assets/kid320.jpg 320w, 
+                        assets/kid400.jpg 400w,
+                        assets/kid800.jpg 800w,
+                        assets/kid1000.jpg 1000w,
+                        assets/kid.jpg 1920w">
+            <h1>Mission Statement</h1>
+            <p>Our mission is to ensure that every child in America has access to the food they need to grow up healthy and strong. We aim to provide every child with three healthy meals a day, 365 days a year by supporting school meal programs, community partnerships, and advocating for policies to end child hunger.</p>
+        </section>
+        <section id="call-to-action">
+            <h1 class="hidden">Call to Action</h1>
+            <picture>
+                <source media="(min-width: 1025px)" 
+                        srcset="assets/child-desktop.jpg"> 
+                <source media="(min-width: 601px)" 
+                        srcset="assets/child-tablet.jpg">
+                <img src="assets/child-mobile.jpg" 
+                        alt="child"
+                        class="call-to-action-image">
+            </picture>
+            <p>1 in 5 kids lives with hunger in America today. You can help fix that by donating. You can donate as little as 1 dollar.</p>
+        </section>
+        <section id="programs">
+            <h1 class="hidden">Programs</h1>
+            <div class="program-video" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/756819734?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Principals and Teachers Work Hard to Help Feed Kids"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
